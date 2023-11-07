@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct CircleSwiftUIView: View {
+    
+    let buttonColor : Color
+    let label: String
+    let labelColor: Color
+    
+    
+    
     var body: some View {
         ZStack {
             //first layer
@@ -34,5 +41,8 @@ struct CircleSwiftUIView: View {
 }
 
 #Preview {
-    CircleSwiftUIView()
+    CircleSwiftUIView(
+        buttonColor: .gray,
+        label: "Reset",
+        labelColor: .white)
 }

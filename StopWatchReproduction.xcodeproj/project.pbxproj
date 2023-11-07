@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB183A2D2AF85CDD00132505 /* CircleSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB183A2C2AF85CDD00132505 /* CircleSwiftUIView.swift */; };
 		DB8217182AF52CD100D8983B /* StopWatchReproductionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8217172AF52CD100D8983B /* StopWatchReproductionApp.swift */; };
 		DB82171A2AF52CD100D8983B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8217192AF52CD100D8983B /* ContentView.swift */; };
 		DB82171C2AF52CD300D8983B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB82171B2AF52CD300D8983B /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB183A2C2AF85CDD00132505 /* CircleSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSwiftUIView.swift; sourceTree = "<group>"; };
 		DB8217142AF52CD100D8983B /* StopWatchReproduction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StopWatchReproduction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8217172AF52CD100D8983B /* StopWatchReproductionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchReproductionApp.swift; sourceTree = "<group>"; };
 		DB8217192AF52CD100D8983B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				DB8217192AF52CD100D8983B /* ContentView.swift */,
 				DB82171B2AF52CD300D8983B /* Assets.xcassets */,
 				DB82171D2AF52CD300D8983B /* Preview Content */,
+				DB183A2C2AF85CDD00132505 /* CircleSwiftUIView.swift */,
 			);
 			path = StopWatchReproduction;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB183A2D2AF85CDD00132505 /* CircleSwiftUIView.swift in Sources */,
 				DB82171A2AF52CD100D8983B /* ContentView.swift in Sources */,
 				DB8217182AF52CD100D8983B /* StopWatchReproductionApp.swift in Sources */,
 			);
