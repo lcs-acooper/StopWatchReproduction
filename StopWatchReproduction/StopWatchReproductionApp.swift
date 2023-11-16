@@ -18,23 +18,26 @@ struct StopWatchReproductionApp: App {
                         Image(systemName: "globe")
                         Text("World Clock")
                     }
+                    .tag(1)
                 
                 Text("Alarm")
                     .tabItem {
                         Image(systemName: "alarm.fill")
                         Text("Alarm")
                     }
-                
+                    .tag(2)
                 ContentView()
                     .tabItem {
                         Image(systemName: "stopwatch.fill")
                         Text("Stopwatch")
                     }
+                    .tag(3)
                 Text("Timer")
                     .tabItem {
                         Image(systemName: "timer")
                         Text("Timer")
                     }
+                    .tag(4)
                 
                 
                 
@@ -44,9 +47,6 @@ struct StopWatchReproductionApp: App {
             .accentColor(.orange)
             //Prefered Colour Scheme
             .preferredColorScheme(.dark)
-            
-            
-            
         }
     }
 }

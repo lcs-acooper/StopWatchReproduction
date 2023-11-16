@@ -42,14 +42,15 @@ struct ContentView: View {
                 //Listing Numbers
                 List {
                     Group {
-                        Text ("1")
-                        Text ("2")
-                        Text ("3")
-                        Text ("4")
-                        Text ("5")
+                        LapTimeView(LapNumber: "Lap 5", LapTime: "00:00.98", LapColor: .white)
+                        LapTimeView(LapNumber: "Lap 4", LapTime: "00:04.08", LapColor: .red)
+                        LapTimeView(LapNumber: "Lap 3", LapTime: "00:00.96", LapColor: .green)
+                        LapTimeView(LapNumber: "Lap 2", LapTime: "00:02.76", LapColor: .white)
+                        LapTimeView(LapNumber: "Lap 1", LapTime: "00:01.16", LapColor: .white)
                     }
                     //Removing inset from line list
                     .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                    .listStyle(.plain)
                     
                 }
                 
@@ -59,6 +60,8 @@ struct ContentView: View {
                 .listStyle(.plain)
                 
                 
+                
+                
             }
             .padding()
         }
@@ -66,6 +69,44 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
-}
+    TabView(selection: Binding.constant(3)) {
+        
+        Text("World Clock")
+            .tabItem {
+                Image(systemName: "globe")
+                Text("World Clock")
+            }
+            .tag(1)
+        
+        Text("Alarm")
+            .tabItem {
+                Image(systemName: "alarm.fill")
+                Text("Alarm")
+            }
+            .tag(2)
+        ContentView()
+            .tabItem {
+                Image(systemName: "stopwatch.fill")
+                Text("Stopwatch")
+            }
+            .tag(3)
+        Text("Timer")
+            .tabItem {
+                Image(systemName: "timer")
+                Text("Timer")
+            }
+            .tag(4)
+        
+        
+        
+    }
     
+    //Accent changed
+    .accentColor(.orange)
+    //Prefered Colour Scheme
+    .preferredColorScheme(.dark)
+    
+
+    
+
+}
